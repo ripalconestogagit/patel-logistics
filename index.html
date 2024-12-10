@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Patel Logistics Limited</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -13,8 +15,7 @@
         <div class="header-container">
 
         <div class="logo">
-            <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" />
-        </div>
+            <a href="index.html"> <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" /></a>        </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
@@ -30,21 +31,22 @@
             <h1>Fast and Reliable Logistics Solutions</h1>
             <p>Your package, our priority. Delivering goods across the globe with efficiency.</p>
 
-            <div class="track-shipment-section background-image">
+            <div class="track-shipment-section background-image" style="text-align: center;">
                 <div class="track-container">
-                    <button class="track-btn">Track Your Shipment</button>
+                    
                     <div class="track-form">
+                        <button class="track-btn">Track Your Shipment</button>
                         <form action="track-shipment.html" method="GET" >
-                        <label for="mobile-number">Mobile No.</label>
+                        <label style="margin-left:5px; color:#00264d" for="mobile-number">Mobile No.</label>
                         <input name="mobile-number" type="text" id="mobile-number" placeholder="Enter Mobile No." required>
                         
-                        <label for="track-number">Tracking No.</label>
+                        <label style="color:#00264d" for="track-number">Tracking No.</label>
                         <input name="tracking-number" type="text" id="tracking-number" placeholder="Enter Tracking No." required>
                         
-                        <label for="order-id">Order ID</label>
+                        <label style="color:#00264d" for="order-id">Order ID</label>
                         <input name="order-id" type="text" id="order-id" placeholder="Enter Order ID" required>
             
-                        <button type="submit" class="submit-btn">&#10095;</button>
+                        <button style="color:#00264d" type="submit" class="submit-btn">&#10095;</button>
                     </form> 
                     </div>
                 </div>
@@ -54,54 +56,138 @@
 
         <section > 
             <h2>Our Services</h2>
-        <div id="services" class="services" >
-           
-            <div class="service-cards" style="text-align:center">
-                <div class="service-card">
-                    <h3>Express Delivery</h3>
-                    <p>Fast and reliable same-day and next-day delivery services.</p>
+                <!-- <section class="testimonials">  
+
+            
+                <div class="about-numbers" >
+                    <div class="number-item">
+                        <h3>Express Delivery</h3>
+                        <p>Fast and reliable same-day and next-day delivery services.</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>Warehousing</h3>
+                        <p>Secure and spacious warehouses for storage and distribution.</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>Freight Shipping</h3>
+                        <p>International and domestic shipping for large volumes of goods.</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>eCommerce Solutions</h3>
+                        <p>Integrated solutions for eCommerce businesses, from pickup to delivery.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Warehousing</h3>
-                    <p>Secure and spacious warehouses for storage and distribution.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Freight Shipping</h3>
-                    <p>International and domestic shipping for large volumes of goods.</p>
-                </div>
-                <div class="service-card">
-                    <h3>eCommerce Solutions</h3>
-                    <p>Integrated solutions for eCommerce businesses, from pickup to delivery.</p>
-                </div>
-            </div>
+                </section> -->
+                <section class="services">
+                    <!-- <h2>Our Services</h2> -->
+                    <div class="service-box">
+                        <img src="./images/services1.jpg" alt="Service 1" class="service-img">
+                        <h3>International Shipping</h3>
+                        <p>We offer reliable international shipping services to help businesses expand globally.</p>
+                        
+                    </div>
+                
+                    <div class="service-box">
+                        <img src="./images/services2.jpg" alt="Service 2" class="service-img">
+                        <h3>Supply Chain Solutions</h3>
+                        <p>Optimize your supply chain with our innovative solutions that improve efficiency and reduce costs.</p>
+                        
+                    </div>
+                
+                    <div class="service-box">
+                        <img src="./images/warehouse.jpg" alt="Service 3" class="service-img">
+                        <h3>Warehousing & Distribution</h3>
+                        <p>We offer secure warehousing and efficient distribution services to ensure timely delivery of goods.</p>
+                        
+                    </div>
+                </section>
+                
         </section>
 
-        <section id="about" class="about">
-            <h2>About Us</h2>
+        <!-- <section id="about" class="about"> -->
+            <!-- <h2>About Us</h2>
             <p>We are a trusted logistics partner for businesses across various industries, committed to delivering packages quickly, safely, and reliably.</p>
-            <img src="images/logistics1.jpg" alt="Logistics operations">
+            <img src="images/logistics1.jpg" alt="Logistics operations"> -->
+        <!-- </section> -->
+        <h2>About Us</h2>
+        <section class="about-section">
+           
+            <p>At Patel Logistics, we are a global leader in logistics and supply chain solutions. With over 25 years of experience, we specialize in delivering innovative, reliable, and cost-effective services to businesses worldwide. Our team is dedicated to optimizing logistics operations, ensuring timely and safe delivery of your goods.</p>
+        
+            <div class="about-numbers">
+                <div class="number-item">
+                    <h3><span id="years-experience">25</span> Years of Experience</h3>
+                    <p>We have been providing top-notch logistics services for over two decades.</p>
+                </div>
+                <div class="number-item">
+                    <h3><span id="countries-served">75</span> Countries Served</h3>
+                    <p>Our services span across more than 75 countries, delivering goods worldwide.</p>
+                </div>
+                <div class="number-item">
+                    <h3><span id="shipments-processed">200M</span> Shipments Processed</h3>
+                    <p>We handle over 200 million shipments annually, ensuring timely deliveries.</p>
+                </div>
+            </div>
+            <div class="about-numbers">
+                <div class="number-item">
+                    <h3>Fleet Size</h3>
+                    <p>With over 5000 trucks in our fleet, we ensure that we can meet all of your shipping needs, no matter the size.</p>
+                </div>
+                <div class="number-item">
+                    <h3>Warehouses & Distribution</h3>
+                    <p>We have over 150 warehouses and 250 distribution centers across the globe, ensuring that goods are always close to their destination.</p>
+                </div>
+                <div class="number-item">
+                    <h3>Customer Satisfaction</h3>
+                    <p>We are proud of our 98% customer satisfaction rate, thanks to our dedication to on-time delivery and quality service.</p>
+                </div>
+            </div>
+        
         </section>
+        
 
         <h2>What Our Clients Say</h2>
-        <section class="testimonials">    
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
+        <section class="testimonials">  
+            <div class="about-numbers" >
+                <div class="number-item">
+                    <p>Their professionalism and timely deliveries have made a huge difference for our business. Outstanding service!</p>
+                    <h3>Sophia Martinez</h3>
+                </div>
+                <div class="number-item">
+                    <p>Patel Logistics Limited has transformed our supply chain with their prompt and dependable services – highly recommend!</p>
+                    <h3>John Davis</h3>
+                </div>
+                <div class="number-item">
                     <p>"Excellent service! My package was delivered on time, and the tracking was accurate."</p>
-                    <p><strong>- John Doe</strong></p>
+                    <h3>John Doe</h3>
                 </div>
-                <div class="testimonial-card">
+                <!-- <div class="number-item">
                     <p>"Great customer support and very reliable delivery options for my eCommerce business."</p>
-                    <p><strong>- Jane Smith</strong></p>
+                    <h3>Jane Smith</h3>
+                </div> -->
                 </div>
-            </div>
         </section>
+
+
+    <section class="newsletter">
+        <span id="success_msg_news" style="display:none">Congratulations, Now you will get all the updates via your email.</span>
+        <div class="newsletter-content">
+            <h2 style="color:white">Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest updates on logistics trends, services, and offers.</p>
+            <form id="news_letter_form"  class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit" id="news_later_btn" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    
     </main>
     <footer>
 
         <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo.png" height="50px" width="50px" alt="Company Logo" />
-            </div>
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" /></a>            </div>
 
             <div class="footer-links">
                     <div class="footer-column">
@@ -133,5 +219,13 @@
         <p>&copy; Patel Logistics Ltd. All rights reserved</p>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
 
+<script>
+    
+    $("#news_letter_form").on('submit', (event)=>{
+        event.preventDefault();
+        $("#success_msg_news").show();
+    })
+</script>
 </html>

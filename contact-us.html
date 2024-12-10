@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Patel Logistics Limited</title>
+    <title>Contact Us | Patel Logistics Limited</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,8 +13,7 @@
         <div class="header-container">
 
         <div class="logo">
-            <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" />
-        </div>
+            <a href="index.html"> <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" /></a>        </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about-us.html">About</a>
@@ -26,15 +25,35 @@
         </div>
     </header>
     <main>
+        
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need assistance, please don't hesitate to reach out to us using the form below. We’ll get back to you as soon as possible!</p>
+            
+            <div class="contact-info">
+                <h2>Our Contact Information</h2>
+                <p><strong>Email:</strong><a style="color:black" href="mailto:info@patellogistics.com"></a> info@patellogistics.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a></p>
+                <p><strong>Address:</strong> 964, Concession rd, Cambridge, Canada</p>
+                <p>Follow us on social media:</p>
+                <div class="social-media-links">
+                    <a href="#" target="www.facebook.com">Facebook</a>
+                    <a href="#" target="www.twitter.com">Twitter</a>
+                    <a href="#" target="www.instagram.com">Instagram</a>
+                </div>
+            </div>
+            </section>
 
 
         <section class="hero background-image-contact">
+
+            <div id="contact_us_msg" class="success-message" style="display: none;">Thank you for contacting us. We will contact you shortly.</div>
             <div class="hero-overlay">
-                <h1 style="color:white">Contact US</h1>
+                <h1 style="text-align: center; color:#00264d">Let us know, How we can help you!</h1>
             </div>
         </section>
 
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" id="contact_form" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
         
@@ -47,18 +66,17 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
         
-            <button type="submit" class="button">Send Message</button>
+            <button type="submit" class="button" id="button1" style="background: #00264d;
+">Send Message</button>
         </form>
         
-
 
         
     <footer>
 
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="images/logo.png" height="50px" width="50px" alt="Company Logo" />
-            </div>
+                <a href="index.html"> <img src="images/logo.png" height="30px" width="30px" alt="Company Logo" /></a>            </div>
 
             <div class="footer-links">
                 <div class="footer-column">
@@ -90,5 +108,19 @@
         <p>&copy; Patel Logistics Ltd. All rights reserved</p>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+<script>
+    
+        
+  
+
+        $("#contact_form").on("submit", (e)=> {
+            e.preventDefault();
+            $("#contact_us_msg").show();
+            $("#contact_form")[0].reset();
+          } );
+
+    
+</script>
 
 </html>
